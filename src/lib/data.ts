@@ -220,7 +220,7 @@ export const FOOTER_DATA = {
     { text: 'Servicios', href: '#services' },
     { text: 'Planes', href: '#pricing' },
     { text: 'FAQ', href: '#faq' },
-    { text: 'Herramientas AI', href: '/tools/ab-test-headlines' },
+    { text: 'Herramientas AI', href: '/tools/clause-generator' },
   ],
   social: [
     { text: 'LinkedIn', href: '#' },

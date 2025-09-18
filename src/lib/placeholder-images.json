@@ -2,57 +2,57 @@
   "placeholderImages": [
     {
       "id": "hero-image",
-      "description": "Modern and professional law office setting with city view.",
-      "imageUrl": "https://picsum.photos/seed/corp-law-hero/1200/800",
-      "imageHint": "law office"
+      "description": "Modern office building with a team of lawyers discussing.",
+      "imageUrl": "https://picsum.photos/seed/corporate-law/1200/800",
+      "imageHint": "corporate lawyers meeting"
     },
     {
       "id": "avatar-1",
-      "description": "Professional corporate headshot of a person.",
-      "imageUrl": "https://picsum.photos/seed/corp-avatar1/100/100",
-      "imageHint": "corporate headshot"
+      "description": "Professional corporate headshot of a business woman.",
+      "imageUrl": "https://picsum.photos/seed/woman-headshot/100/100",
+      "imageHint": "professional headshot"
     },
     {
       "id": "avatar-2",
-      "description": "Professional corporate headshot of a person.",
-      "imageUrl": "https://picsum.photos/seed/corp-avatar2/100/100",
-      "imageHint": "corporate headshot"
+      "description": "Professional corporate headshot of a business man.",
+      "imageUrl": "https://picsum.photos/seed/man-headshot/100/100",
+      "imageHint": "professional headshot"
     },
     {
       "id": "avatar-3",
       "description": "Professional corporate headshot of a person.",
-      "imageUrl": "https://picsum.photos/seed/corp-avatar3/100/100",
-      "imageHint": "corporate headshot"
+      "imageUrl": "https://picsum.photos/seed/person-headshot/100/100",
+      "imageHint": "professional headshot"
     },
     {
-      "id": "logo-1",
-      "description": "Placeholder logo for a modern tech company.",
-      "imageUrl": "https://picsum.photos/seed/corp-logo1/150/50",
-      "imageHint": "minimalist logo"
+      "id": "logo-y-combinator",
+      "description": "Logo for Y Combinator.",
+      "imageUrl": "https://picsum.photos/seed/yc-logo/158/48",
+      "imageHint": "Y Combinator logo"
     },
     {
-      "id": "logo-2",
-      "description": "Placeholder logo for a modern tech company.",
-      "imageUrl": "https://picsum.photos/seed/corp-logo2/150/50",
-      "imageHint": "minimalist logo"
+      "id": "logo-sequoia",
+      "description": "Logo for Sequoia Capital.",
+      "imageUrl": "https://picsum.photos/seed/sequoia-logo/158/48",
+      "imageHint": "Sequoia logo"
     },
     {
-      "id": "logo-3",
-      "description": "Placeholder logo for a modern tech company.",
-      "imageUrl": "https://picsum.photos/seed/corp-logo3/150/50",
-      "imageHint": "minimalist logo"
+      "id": "logo-stripe",
+      "description": "Logo for Stripe.",
+      "imageUrl": "https://picsum.photos/seed/stripe-logo/158/48",
+      "imageHint": "Stripe logo"
     },
     {
-      "id": "logo-4",
-      "description": "Placeholder logo for a modern tech company.",
-      "imageUrl": "https://picsum.photos/seed/corp-logo4/150/50",
-      "imageHint": "minimalist logo"
+      "id": "logo-deel",
+      "description": "Logo for the company Deel.",
+      "imageUrl": "https://picsum.photos/seed/deel-logo/158/48",
+      "imageHint": "Deel logo"
     },
     {
-      "id": "logo-5",
-      "description": "Placeholder logo for a modern tech company.",
-      "imageUrl": "https://picsum.photos/seed/corp-logo5/150/50",
-      "imageHint": "minimalist logo"
+      "id": "logo-mercury",
+      "description": "Logo for Mercury bank.",
+      "imageUrl": "https://picsum.photos/seed/mercury-logo/158/48",
+      "imageHint": "Mercury logo"
     }
   ]
 }

@@ -8,7 +8,7 @@ import {
   DropdownMenuItem,
   DropdownMenuTrigger,
 } from '@/components/ui/dropdown-menu';
-import { ChevronDown, Menu } from 'lucide-react';
+import { ChevronDown, Menu, Languages } from 'lucide-react';
 import {
   Sheet,
   SheetContent,
@@ -16,28 +16,61 @@ import {
   SheetTrigger,
 } from '@/components/ui/sheet';
 import React from 'react';
+import { usePathname } from 'next/navigation';
+import { i18n, type Locale } from '@/i18n-config';
 
-const navLinks = [
-  { text: 'Servicios', href: '/#services' },
-  { text: 'Planes', href: '/#pricing' },
-  { text: 'Nosotros', href: '/#testimonials' },
-  { text: 'FAQ', href: '/#faq' },
-];
+type Dictionary = {
+  services: string;
+  pricing: string;
+  about: string;
+  faq: string;
+  tools: string;
+  abTest: string;
+  adCopy: string;
+  seoAnalyzer: string;
+  contact: string;
+  openMenu: string;
+  legalClauseGenerator: string;
+  contractAnalyzer: string;
+  jurisprudenceFinder: string;
+};
 
-const toolLinks = [
-  { text: 'A/B Test Headlines', href: '/tools/ab-test-headlines' },
-  { text: 'Generador de Anuncios', href: '/tools/ad-copy' },
-  { text: 'Analizador SEO', href: '/tools/seo-analyzer' },
-];
-
-export function AppHeader() {
+export function AppHeader({
+  lang,
+  dictionary,
+}: {
+  lang: Locale;
+  dictionary: Dictionary;
+}) {
   const [isSheetOpen, setSheetOpen] = React.useState(false);
+
+  const navLinks = [
+    { text: dictionary.services, href: `/${lang}/#services` },
+    { text: dictionary.pricing, href: `/${lang}/#pricing` },
+    { text: dictionary.about, href: `/${lang}/#testimonials` },
+    { text: dictionary.faq, href: `/${lang}/#faq` },
+  ];
+
+  const toolLinks = [
+    {
+      text: dictionary.legalClauseGenerator,
+      href: `/${lang}/tools/clause-generator`,
+    },
+    {
+      text: dictionary.contractAnalyzer,
+      href: `/${lang}/tools/contract-analyzer`,
+    },
+    {
+      text: dictionary.jurisprudenceFinder,
+      href: `/${lang}/tools/jurisprudence-finder`,
+    },
+  ];
 
   return (
     <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container flex h-16 max-w-7xl items-center">
         <div className="mr-4 flex items-center">
-          <Link href="/" className="flex items-center gap-2">
+          <Link href={`/${lang}`} className="flex items-center gap-2">
             <Logo className="h-6 w-6 text-primary" />
             <span className="font-headline text-lg font-medium text-foreground">
               Syg Legal
@@ -55,25 +88,26 @@ export function AppHeader() {
               {link.text}
             </Link>
           ))}
-          <ToolsDropdown />
+          <ToolsDropdown dictionary={dictionary} toolLinks={toolLinks} />
         </nav>
 
         <div className="flex flex-1 items-center justify-end gap-2">
+          <LanguageSwitcher lang={lang} />
           <Button asChild>
-            <Link href="/#contact">Agenda Asesoría</Link>
+            <Link href={`/${lang}/#contact`}>{dictionary.contact}</Link>
           </Button>
           <div className="md:hidden">
             <Sheet open={isSheetOpen} onOpenChange={setSheetOpen}>
               <SheetTrigger asChild>
                 <Button variant="ghost" size="icon">
                   <Menu className="h-5 w-5" />
-                  <span className="sr-only">Abrir menú</span>
+                  <span className="sr-only">{dictionary.openMenu}</span>
                 </Button>
               </SheetTrigger>
               <SheetContent side="right">
                 <SheetHeader>
                   <Link
-                    href="/"
+                    href={`/${lang}`}
                     className="flex items-center gap-2"
                     onClick={() => setSheetOpen(false)}
                   >
@@ -95,9 +129,9 @@ export function AppHeader() {
                     </Link>
                   ))}
                   <span className="font-medium text-foreground">
-                    Herramientas AI
+                    {dictionary.tools}
                   </span>
-                  <div className="flex flex-col gap-4 pl-4 border-l">
+                  <div className="flex flex-col gap-4 border-l pl-4">
                     {toolLinks.map((link) => (
                       <Link
                         key={link.text}
@@ -119,7 +153,13 @@ export function AppHeader() {
   );
 }
 
-function ToolsDropdown() {
+function ToolsDropdown({
+  dictionary,
+  toolLinks,
+}: {
+  dictionary: Dictionary;
+  toolLinks: { text: string; href: string }[];
+}) {
   return (
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
@@ -127,13 +167,41 @@ function ToolsDropdown() {
           variant="ghost"
           className="gap-1 px-2 font-medium text-foreground/60 transition-colors hover:text-foreground/80"
         >
-          Herramientas AI <ChevronDown className="h-4 w-4" />
+          {dictionary.tools} <ChevronDown className="h-4 w-4" />
         </Button>
       </DropdownMenuTrigger>
       <DropdownMenuContent align="start">
         {toolLinks.map((link) => (
           <DropdownMenuItem key={link.text} asChild>
             <Link href={link.href}>{link.text}</Link>
+          </DropdownMenuItem>
+        ))}
+      </DropdownMenuContent>
+    </DropdownMenu>
+  );
+}
+
+function LanguageSwitcher({ lang }: { lang: Locale }) {
+  const pathname = usePathname();
+
+  const redirectedPathName = (locale: Locale) => {
+    if (!pathname) return '/';
+    const segments = pathname.split('/');
+    segments[1] = locale;
+    return segments.join('/');
+  };
+
+  return (
+    <DropdownMenu>
+      <DropdownMenuTrigger asChild>
+        <Button variant="ghost" size="icon">
+          <Languages className="h-5 w-5" />
+        </Button>
+      </DropdownMenuTrigger>
+      <DropdownMenuContent align="end">
+        {i18n.locales.map((locale) => (
+          <DropdownMenuItem key={locale} asChild>
+            <Link href={redirectedPathName(locale)}>{locale.toUpperCase()}</Link>
           </DropdownMenuItem>
         ))}
       </DropdownMenuContent>
