@@ -32,7 +32,7 @@ export function Hero({ dictionary }: { dictionary: Dictionary['hero'] }) {
             <Button asChild size="lg">
               <Link href="/#contact">{dictionary.cta1}</Link>
             </Button>
-            <Button asChild variant="secondary" size="lg">
+            <Button asChild variant="outline" size="lg">
               <Link href="/#pricing">{dictionary.cta2}</Link>
             </Button>
           </div>
