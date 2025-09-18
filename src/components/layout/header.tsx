@@ -128,7 +128,7 @@ export function AppHeader({
         </nav>
 
         <div className="ml-auto flex items-center justify-end gap-2">
-          {/* <LanguageSwitcher lang={lang} /> */}
+          <LanguageSwitcher lang={lang} />
           <Button asChild>
             <Link href={`/${lang}/#contact`}>{dictionary.contact}</Link>
           </Button>
@@ -227,15 +227,19 @@ function LanguageSwitcher({ lang }: { lang: Locale }) {
   return (
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
-        <Button variant="ghost" size="icon">
+        <Button variant="ghost" className="gap-2 px-2">
           <Globe className="h-5 w-5" />
+          <span className="font-medium uppercase">{lang}</span>
         </Button>
       </DropdownMenuTrigger>
       <DropdownMenuContent align="end">
         {i18n.locales.map((locale) => (
           <DropdownMenuItem key={locale} asChild>
-            <Link href={redirectedPathName(locale)} className="flex items-center gap-2">
-               {locale === 'es' ? <ColombianFlag /> : <USFlag />}
+            <Link
+              href={redirectedPathName(locale)}
+              className="flex items-center gap-2"
+            >
+              {locale === 'es' ? <ColombianFlag /> : <USFlag />}
               {locale.toUpperCase()}
             </Link>
           </DropdownMenuItem>
