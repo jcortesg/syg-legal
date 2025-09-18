@@ -131,7 +131,7 @@ export function AppHeader({
         </nav>
 
         <div className="ml-auto flex items-center justify-end gap-2">
-          <LanguageSwitcher lang={lang} />
+          {/* <LanguageSwitcher lang={lang} /> */}
           <Button asChild>
             <Link href={`/${lang}/#contact`}>{dictionary.contact}</Link>
           </Button>
