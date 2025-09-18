@@ -32,7 +32,7 @@
       ]
     },
     "solution": {
-      "title": "La solución Syg: Agilidad y certeza legal",
+      "title": "La solución SYG: Agilidad y certeza legal",
       "points": [
         "Planes de suscripción flexibles que se adaptan a tu etapa de crecimiento.",
         "Documentación lista para auditorías y rondas de inversión (due diligence).",
@@ -83,7 +83,7 @@
     "headline": "Lo que dicen nuestros clientes",
     "items": [
       {
-        "quote": "“Syg Legal fue clave para cerrar nuestra ronda semilla. Su agilidad y conocimiento del ecosistema tech nos dio la confianza para negociar y crecer sin miedo.”",
+        "quote": "“SYG Legal fue clave para cerrar nuestra ronda semilla. Su agilidad y conocimiento del ecosistema tech nos dio la confianza para negociar y crecer sin miedo.”",
         "author": "Ana Pérez",
         "role": "CEO",
         "company": "FintechCo",
@@ -113,8 +113,8 @@
     "plans": [
       {
         "name": "Básico",
-        "price": "$250",
-        "priceDescription": "USD / mes",
+        "price": "$1'000.000",
+        "priceDescription": "COP / mes",
         "features": [
           "Consultas rápidas (hasta 2h)",
           "Revisión de 1 documento/mes",
@@ -126,8 +126,8 @@
       },
       {
         "name": "Growth",
-        "price": "$750",
-        "priceDescription": "USD / mes",
+        "price": "$3'000.000",
+        "priceDescription": "COP / mes",
         "features": [
           "Consultas ilimitadas vía chat",
           "Revisión/redacción de 4 documentos/mes",
@@ -139,8 +139,8 @@
       },
       {
         "name": "Premium",
-        "price": "$2,000",
-        "priceDescription": "USD / mes",
+        "price": "$8'000.000",
+        "priceDescription": "COP / mes",
         "features": [
           "Todo en Growth +",
           "Soporte en rondas de inversión (data room)",
@@ -185,7 +185,7 @@
   },
   "footer": {
     "description": "Socio legal para startups y PYMEs tecnológicas. Asesoría clara, ágil y asequible.",
-    "legal": "© {YEAR} Syg Legal. Todos los derechos reservados.",
+    "legal": "© {YEAR} SYG Legal. Todos los derechos reservados.",
     "links": [
       { "text": "Servicios", "href": "#services" },
       { "text": "Planes", "href": "#pricing" },

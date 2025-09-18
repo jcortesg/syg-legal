@@ -32,7 +32,7 @@
       ]
     },
     "solution": {
-      "title": "The Syg solution: Agility and legal certainty",
+      "title": "The SYG solution: Agility and legal certainty",
       "points": [
         "Flexible subscription plans that adapt to your growth stage.",
         "Documentation ready for audits and investment rounds (due diligence).",
@@ -83,7 +83,7 @@
     "headline": "What our clients are saying",
     "items": [
       {
-        "quote": "“Syg Legal was key to closing our seed round. Their agility and knowledge of the tech ecosystem gave us the confidence to negotiate and grow without fear.”",
+        "quote": "“SYG Legal was key to closing our seed round. Their agility and knowledge of the tech ecosystem gave us the confidence to negotiate and grow without fear.”",
         "author": "Ana Pérez",
         "role": "CEO",
         "company": "FintechCo",
@@ -185,7 +185,7 @@
   },
   "footer": {
     "description": "Legal partner for startups and tech SMEs. Clear, agile, and affordable advice.",
-    "legal": "© {YEAR} Syg Legal. All rights reserved.",
+    "legal": "© {YEAR} SYG Legal. All rights reserved.",
     "links": [
       { "text": "Services", "href": "#services" },
       { "text": "Pricing", "href": "#pricing" },

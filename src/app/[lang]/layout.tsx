@@ -7,7 +7,7 @@ import { getDictionary } from '@/dictionaries';
 import type { Locale } from '@/i18n-config';
 
 export const metadata: Metadata = {
-  title: 'SygLegal Landing Optimizer',
+  title: 'SYGLegal Landing Optimizer',
   description: 'Your legal partner to grow without fear.',
 };
 
@@ -20,7 +20,7 @@ export default async function RootLayout({
 }>) {
   const dictionary = await getDictionary(lang);
   return (
-    <html lang={lang} className="dark">
+    <html lang={lang}>
       <head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link

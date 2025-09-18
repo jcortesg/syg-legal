@@ -16,7 +16,7 @@ export async function AppFooter({ lang }: { lang: Locale }) {
             <div className="flex items-center gap-2">
               <Logo className="h-8 w-8 text-primary" />
               <span className="font-headline text-xl font-medium text-foreground">
-                Syg Legal
+                SYG Legal
               </span>
             </div>
             <p className="mt-4 max-w-xs text-muted-foreground">
