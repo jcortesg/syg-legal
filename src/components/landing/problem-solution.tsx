@@ -7,7 +7,7 @@ export function ProblemSolution({
   dictionary: Dictionary['problemSolution'];
 }) {
   return (
-    <section id="problem-solution" className="bg-secondary/50 py-20 sm:py-28">
+    <section id="problem-solution" className="bg-background py-20 sm:py-28">
       <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 gap-12 md:grid-cols-2 md:gap-16">
           <div>

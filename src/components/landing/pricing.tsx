@@ -8,7 +8,7 @@ import type { Plan } from '@/lib/data';
 
 export function Pricing({ dictionary }: { dictionary: Dictionary['pricing'] }) {
   return (
-    <section id="pricing" className="bg-secondary/50 py-20 sm:py-28">
+    <section id="pricing" className="bg-background py-20 sm:py-28">
       <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="text-center">
           <p className="font-headline text-base font-semibold uppercase tracking-wider text-primary">

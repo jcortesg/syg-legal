@@ -8,7 +8,7 @@ import type { Dictionary } from '@/dictionaries';
 
 export function Faq({ dictionary }: { dictionary: Dictionary['faq'] }) {
   return (
-    <section id="faq" className="bg-secondary/50 py-20 sm:py-28">
+    <section id="faq" className="bg-background py-20 sm:py-28">
       <div className="container mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
         <div className="text-center">
           <p className="font-headline text-base font-semibold uppercase tracking-wider text-primary">
