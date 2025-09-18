@@ -8,7 +8,8 @@ import { FinalCta } from '@/components/landing/final-cta';
 import { getDictionary } from '@/dictionaries';
 import type { Locale } from '@/i18n-config';
 
-export default async function Home({ params: { lang } }: { params: { lang: Locale } }) {
+export default async function Home({ params }: { params: { lang: Locale } }) {
+  const { lang } = params;
   const dictionary = await getDictionary(lang);
   return (
     <>
