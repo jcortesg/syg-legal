@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { Logo } from '@/components/logo';
+import { LogoImage } from '@/components/logo-image';
 import { getDictionary } from '@/dictionaries';
 import { Locale } from '@/i18n-config';
 
@@ -14,10 +14,7 @@ export async function AppFooter({ lang }: { lang: Locale }) {
         <div className="grid grid-cols-1 gap-8 md:grid-cols-4">
           <div className="md:col-span-2">
             <div className="flex items-center gap-2">
-              <Logo className="h-8 w-8 text-primary" />
-              <span className="font-headline text-xl font-medium text-foreground">
-                SYG Legal
-              </span>
+              <LogoImage className="h-10 w-auto" />
             </div>
             <p className="mt-4 max-w-xs text-muted-foreground">
               {footerData.description}

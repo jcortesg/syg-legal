@@ -1,7 +1,7 @@
 'use client';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
-import { Logo } from '@/components/logo';
+import { LogoImage } from '@/components/logo-image';
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -110,10 +110,7 @@ export function AppHeader({
       <div className="container flex h-16 max-w-7xl items-center">
         <div className="mr-auto flex items-center">
           <Link href={`/${lang}`} className="flex items-center gap-2">
-            <Logo className="h-6 w-6 text-primary" />
-            <span className="font-headline text-lg font-medium text-foreground">
-              SYG Legal
-            </span>
+            <LogoImage className="h-8 w-auto" />
           </Link>
         </div>
 
@@ -150,10 +147,7 @@ export function AppHeader({
                     className="flex items-center gap-2"
                     onClick={() => setSheetOpen(false)}
                   >
-                    <Logo className="h-6 w-6 text-primary" />
-                    <span className="font-headline text-lg font-medium text-foreground">
-                      SYG Legal
-                    </span>
+                    <LogoImage className="h-8 w-auto" />
                   </Link>
                 </SheetHeader>
                 <div className="mt-8 flex flex-col gap-4">
