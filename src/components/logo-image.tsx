@@ -1,14 +1,9 @@
-import Image from 'next/image';
-
-export function LogoImage({ className }: { className?: string }) {
+export function LogoImage({className}: {className?: string}) {
   return (
-    <Image
-      src="/syg-logo.png"
-      alt="SYG Legal Logo"
-      width={120}
-      height={40}
-      className={className}
-      priority
-    />
+    <span
+      className={`font-headline text-2xl font-bold text-primary ${className}`}
+    >
+      SYG Legal
+    </span>
   );
 }

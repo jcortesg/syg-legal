@@ -14,7 +14,7 @@ export async function AppFooter({ lang }: { lang: Locale }) {
         <div className="grid grid-cols-1 gap-8 md:grid-cols-4">
           <div className="md:col-span-2">
             <div className="flex items-center gap-2">
-              <LogoImage className="h-10 w-auto" />
+              <LogoImage />
             </div>
             <p className="mt-4 max-w-xs text-muted-foreground">
               {footerData.description}

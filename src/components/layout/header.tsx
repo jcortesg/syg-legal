@@ -110,7 +110,7 @@ export function AppHeader({
       <div className="container flex h-16 max-w-7xl items-center">
         <div className="mr-auto flex items-center">
           <Link href={`/${lang}`} className="flex items-center gap-2">
-            <LogoImage className="h-8 w-auto" />
+            <LogoImage />
           </Link>
         </div>
 
@@ -147,7 +147,7 @@ export function AppHeader({
                     className="flex items-center gap-2"
                     onClick={() => setSheetOpen(false)}
                   >
-                    <LogoImage className="h-8 w-auto" />
+                    <LogoImage />
                   </Link>
                 </SheetHeader>
                 <div className="mt-8 flex flex-col gap-4">
