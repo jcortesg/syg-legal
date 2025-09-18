@@ -8,7 +8,7 @@ import {
   DropdownMenuItem,
   DropdownMenuTrigger,
 } from '@/components/ui/dropdown-menu';
-import { ChevronDown, Menu, Languages } from 'lucide-react';
+import { ChevronDown, Menu, Globe } from 'lucide-react';
 import {
   Sheet,
   SheetContent,
@@ -234,7 +234,7 @@ function LanguageSwitcher({ lang }: { lang: Locale }) {
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
         <Button variant="ghost" size="icon">
-          <Languages className="h-5 w-5" />
+          <Globe className="h-5 w-5" />
         </Button>
       </DropdownMenuTrigger>
       <DropdownMenuContent align="end">
