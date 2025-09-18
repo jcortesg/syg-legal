@@ -20,6 +20,60 @@ import { usePathname } from 'next/navigation';
 import { i18n, type Locale } from '@/i18n-config';
 import type { Dictionary } from '@/dictionaries';
 
+function ColombianFlag() {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 3 2"
+      width="20"
+      height="14"
+    >
+      <rect width="3" height="2" fill="#003893" />
+      <rect width="3" height="1.5" fill="#fcd116" />
+      <rect width="3" height="0.5" y="1.5" fill="#ce1126" />
+      <rect width="3" height="1" fill="#fcd116" />
+    </svg>
+  );
+}
+
+function USFlag() {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 5 3"
+      width="20"
+      height="12"
+    >
+      <rect width="5" height="3" fill="#B22234" />
+      <rect width="5" height="2" fill="#fff" />
+      <rect width="5" height="1" fill="#B22234" />
+      <rect width="2" height="1.5" fill="#3C3B6E" />
+      <g fill="#fff">
+        <path d="M.2 0L.4.1.2.2.0.1z" transform="translate(0, .15) scale(.2)" />
+        <path d="M.2 0L.4.1.2.2.0.1z" transform="translate(.4, .15) scale(.2)" />
+        <path d="M.2 0L.4.1.2.2.0.1z" transform="translate(.8, .15) scale(.2)" />
+        <path d="M.2 0L.4.1.2.2.0.1z" transform="translate(1.2, .15) scale(.2)" />
+        <path d="M.2 0L.4.1.2.2.0.1z" transform="translate(1.6, .15) scale(.2)" />
+        <path d="M.2 0L.4.1.2.2.0.1z" transform="translate(0, .45) scale(.2)" />
+        <path d="M.2 0L.4.1.2.2.0.1z" transform="translate(.4, .45) scale(.2)" />
+        <path d="M.2 0L.4.1.2.2.0.1z" transform="translate(.8, .45) scale(.2)" />
+        <path d="M.2 0L.4.1.2.2.0.1z" transform="translate(1.2, .45) scale(.2)" />
+        <path d="M.2 0L.4.1.2.2.0.1z" transform="translate(1.6, .45) scale(.2)" />
+        <path d="M.2 0L.4.1.2.2.0.1z" transform="translate(0, .75) scale(.2)" />
+        <path d="M.2 0L.4.1.2.2.0.1z" transform="translate(.4, .75) scale(.2)" />
+        <path d="M.2 0L.4.1.2.2.0.1z" transform="translate(.8, .75) scale(.2)" />
+        <path d="M.2 0L.4.1.2.2.0.1z" transform="translate(1.2, .75) scale(.2)" />
+        <path d="M.2 0L.4.1.2.2.0.1z" transform="translate(1.6, .75) scale(.2)" />
+        <path d="M.2 0L.4.1.2.2.0.1z" transform="translate(0, 1.05) scale(.2)" />
+        <path d="M.2 0L.4.1.2.2.0.1z" transform="translate(.4, 1.05) scale(.2)" />
+        <path d="M.2 0L.4.1.2.2.0.1z" transform="translate(.8, 1.05) scale(.2)" />
+        <path d="M.2 0L.4.1.2.2.0.1z" transform="translate(1.2, 1.05) scale(.2)" />
+        <path d="M.2 0L.4.1.2.2.0.1z" transform="translate(1.6, 1.05) scale(.2)" />
+      </g>
+    </svg>
+  );
+}
+
 export function AppHeader({
   lang,
   dictionary,
@@ -54,7 +108,7 @@ export function AppHeader({
   return (
     <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container flex h-16 max-w-7xl items-center">
-        <div className="flex items-center">
+        <div className="mr-auto flex items-center">
           <Link href={`/${lang}`} className="flex items-center gap-2">
             <Logo className="h-6 w-6 text-primary" />
             <span className="font-headline text-lg font-medium text-foreground">
@@ -76,7 +130,7 @@ export function AppHeader({
           <ToolsDropdown dictionary={dictionary} toolLinks={toolLinks} />
         </nav>
 
-        <div className="flex items-center justify-end gap-2">
+        <div className="ml-auto flex items-center justify-end gap-2">
           <LanguageSwitcher lang={lang} />
           <Button asChild>
             <Link href={`/${lang}/#contact`}>{dictionary.contact}</Link>
@@ -186,7 +240,10 @@ function LanguageSwitcher({ lang }: { lang: Locale }) {
       <DropdownMenuContent align="end">
         {i18n.locales.map((locale) => (
           <DropdownMenuItem key={locale} asChild>
-            <Link href={redirectedPathName(locale)}>{locale.toUpperCase()}</Link>
+            <Link href={redirectedPathName(locale)} className="flex items-center gap-2">
+               {locale === 'es' ? <ColombianFlag /> : <USFlag />}
+              {locale.toUpperCase()}
+            </Link>
           </DropdownMenuItem>
         ))}
       </DropdownMenuContent>
