@@ -1,0 +1,264 @@
+
+{
+  "navigation": {
+    "title": "Navigation",
+    "services": "Services",
+    "pricing": "Pricing",
+    "about": "About Us",
+    "faq": "FAQ",
+    "tools": "AI Tools",
+    "legalClauseGenerator": "Clause Generator",
+    "contractAnalyzer": "Contract Analyzer",
+    "jurisprudenceFinder": "Jurisprudence Finder",
+    "contact": "Book a Consultation",
+    "openMenu": "Open menu"
+  },
+  "hero": {
+    "headline": "Your Legal Partner to Grow Without Fear",
+    "subheadline": "Clear, agile, and affordable legal advice for startups and tech SMEs. We integrate into your team so you can innovate without legal friction.",
+    "cta1": "Book a Consultation",
+    "cta2": "View Plans"
+  },
+  "trustedBy": {
+    "headline": "Trusted by leading startups"
+  },
+  "problemSolution": {
+    "problem": {
+      "title": "The legal hurdle holding back your startup",
+      "points": [
+        "Contracts that don't protect you and create future risk.",
+        "Slow investment processes due to corporate disorganization.",
+        "Doubts about intellectual property, data, and expansion that paralyze decisions."
+      ]
+    },
+    "solution": {
+      "title": "The Syg solution: Agility and legal certainty",
+      "points": [
+        "Flexible subscription plans that adapt to your growth stage.",
+        "Documentation ready for audits and investment rounds (due diligence).",
+        "Direct, jargon-free advice focused on business results.",
+        "A legal team that understands technology, product, and venture capital."
+      ]
+    }
+  },
+  "services": {
+    "title": "Our Services",
+    "headline": "Legal Solutions for Your Startup's Lifecycle",
+    "subheadline": "From incorporation to global expansion, we've got you covered at every stage.",
+    "items": [
+      {
+        "icon": "Briefcase",
+        "title": "Incorporation and Corporate Governance",
+        "description": "We structure your company correctly from day one, paving the way for future investments and solid, scalable corporate management."
+      },
+      {
+        "icon": "FileText",
+        "title": "Technology Contracts",
+        "description": "We draft and negotiate your key contracts (SaaS, SLA, DPA, Terms & Privacy) to protect your business and enable sales without friction."
+      },
+      {
+        "icon": "Scale",
+        "title": "Investment and Due Diligence",
+        "description": "We assist you in investment rounds (SAFE, notes, term sheets) and organize your data room for a smooth and successful due diligence process."
+      },
+      {
+        "icon": "Lightbulb",
+        "title": "Intellectual Property",
+        "description": "We protect your most valuable assets: trademark registration, software protection, and rights assignment management to secure your innovation."
+      },
+      {
+        "icon": "ShieldCheck",
+        "title": "Regulatory Compliance",
+        "description": "We navigate the regulatory complexity of personal data, fintech, and digital health so you can operate with confidence and in compliance with current regulations."
+      },
+      {
+        "icon": "Globe",
+        "title": "International Expansion",
+        "description": "We facilitate your global growth, advising on the legal, tax, and operational structure to open new markets safely and efficiently."
+      }
+    ]
+  },
+  "testimonials": {
+    "title": "Testimonials",
+    "headline": "What our clients are saying",
+    "items": [
+      {
+        "quote": "“Syg Legal was key to closing our seed round. Their agility and knowledge of the tech ecosystem gave us the confidence to negotiate and grow without fear.”",
+        "author": "Ana Pérez",
+        "role": "CEO",
+        "company": "FintechCo",
+        "avatar": "avatar-1"
+      },
+      {
+        "quote": "“Finally, a legal team that speaks our language. They helped us launch our SaaS in three countries, with all contracts and policies in record time.”",
+        "author": "Carlos Rodríguez",
+        "role": "CTO",
+        "company": "SaaSy",
+        "avatar": "avatar-2"
+      },
+      {
+        "quote": "“Flexible legal subscription is a game-changer. We have constant support without worrying about hourly costs. A must-have for any startup.”",
+        "author": "Laura Gómez",
+        "role": "Head of Product",
+        "company": "HealthTech Solutions",
+        "avatar": "avatar-3"
+      }
+    ]
+  },
+  "pricing": {
+    "title": "Pricing",
+    "headline": "Flexible Subscription Plans",
+    "subheadline": "Choose the plan that fits your growth stage. No surprises, no hidden fees.",
+    "popular": "Popular",
+    "plans": [
+      {
+        "name": "Basic",
+        "price": "$250",
+        "priceDescription": "USD / month",
+        "features": [
+          "Quick consultations (up to 2h)",
+          "Review of 1 document/month",
+          "Response SLA: 48h",
+          "Access to basic templates"
+        ],
+        "cta": "Start Basic Plan",
+        "isPopular": false
+      },
+      {
+        "name": "Growth",
+        "price": "$750",
+        "priceDescription": "USD / month",
+        "features": [
+          "Unlimited chat consultations",
+          "Review/draft of 4 documents/month",
+          "Response SLA: 24h",
+          "Corporate governance advice"
+        ],
+        "cta": "Start Growth Plan",
+        "isPopular": true
+      },
+      {
+        "name": "Premium",
+        "price": "$2,000",
+        "priceDescription": "USD / month",
+        "features": [
+          "Everything in Growth +",
+          "Support in investment rounds (data room)",
+          "Monthly strategic advisory",
+          "Add-on: trademark registration included"
+        ],
+        "cta": "Start Premium Plan",
+        "isPopular": false
+      }
+    ]
+  },
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "headline": "We answer your questions",
+    "items": [
+      {
+        "question": "How do subscription plans work and what if I exceed the limits?",
+        "answer": "Our plans offer a set number of hours or documents. If you need more, you can upgrade to the next level or purchase an additional hour package. We aim for total flexibility: you pay only for what you need, with predictable costs for your startup."
+      },
+      {
+        "question": "How long does it take to get a response or a contract ready?",
+        "answer": "Our response SLA varies from 24 to 48 hours depending on your plan for inquiries. Drafting a standard contract takes 3 to 5 business days. We prioritize agility so your business doesn't get held up by legal matters."
+      },
+      {
+        "question": "My startup is in a regulated sector (fintech/healthtech), do you have experience?",
+        "answer": "Yes, it's one of our specialties. We help startups in regulated sectors navigate compliance with personal data, licensing, and specific regulations, ensuring your product or service meets all legal requirements from the start."
+      },
+      {
+        "question": "Do you help me prepare for an investment round with international VCs?",
+        "answer": "Absolutely. We prepare your data room, review and negotiate term sheets, and ensure your corporate structure is attractive to international investors. Our goal is for you to enter negotiations with a strong position and no surprises."
+      },
+      {
+        "question": "Is my trademark registration included in the plans?",
+        "answer": "The Premium plan includes the registration of one trademark in your home country. For other plans, or for registrations in multiple countries, we offer an add-on service with preferential rates. Protecting your brand is a critical investment, and we make it easy for you."
+      }
+    ]
+  },
+  "finalCta": {
+    "headline": "Ready to take your startup to the next level?",
+    "subheadline": "Let us handle the legal complexity so you can focus on growth. Schedule a free, no-obligation consultation.",
+    "cta": "Talk to an expert"
+  },
+  "footer": {
+    "description": "Legal partner for startups and tech SMEs. Clear, agile, and affordable advice.",
+    "legal": "© {YEAR} Syg Legal. All rights reserved.",
+    "links": [
+      { "text": "Services", "href": "#services" },
+      { "text": "Pricing", "href": "#pricing" },
+      { "text": "FAQ", "href": "#faq" },
+      { "text": "AI Tools", "href": "/tools/clause-generator" }
+    ],
+    "social": [
+      { "text": "LinkedIn", "href": "#" },
+      { "text": "Twitter", "href": "#" }
+    ],
+    "policies": [
+      { "text": "Privacy Policy", "href": "#" },
+      { "text": "Terms of Service", "href": "#" }
+    ]
+  },
+  "tools": {
+    "abTest": {
+      "title": "Headline A/B Test Variant Generator",
+      "description": "Create multiple headline variations for your landing pages and optimize your conversion. Describe your product, audience, and brand tone, and get 10 options for headlines, sub-headlines, and CTAs.",
+      "form": {
+        "promptLabel": "Describe your product/service",
+        "promptPlaceholder": "e.g., 'Legal firm for startups offering advice on investment rounds, contracts, and intellectual property. Professional and direct tone.'",
+        "submitButton": "Generate Variants",
+        "submittingButton": "Generating..."
+      },
+      "results": {
+        "title": "Generated Variants",
+        "headline": "Headline",
+        "subHeadline": "Sub-headline",
+        "cta": "CTA"
+      }
+    },
+    "adCopy": {
+      "title": "Ad Copy Generator",
+      "description": "Create effective ad copy for Meta (Facebook/Instagram) and LinkedIn. Simply select the platform, define your services, and your audience.",
+      "form": {
+        "platformLabel": "Platform",
+        "servicesLabel": "Key Services",
+        "servicesPlaceholder": "e.g., 'Company incorporation, SaaS contracts'",
+        "audienceLabel": "Target Audience",
+        "audiencePlaceholder": "e.g., 'Founders of seed-stage tech startups'",
+        "submitButton": "Generate Ads",
+        "submittingButton": "Generating..."
+      },
+      "results": {
+        "title": "Generated Copy for {platform}",
+        "headline": "Headline",
+        "copy": "Copy",
+        "description": "Description",
+        "cta": "CTA"
+      }
+    },
+    "seo": {
+      "title": "Landing Page SEO Analyzer",
+      "description": "Paste the HTML content of your landing page and get an SEO checklist to improve your ranking. Includes recommendations for tags, keywords, and more.",
+      "form": {
+        "contentLabel": "Landing Page HTML Content",
+        "contentPlaceholder": "Paste the HTML code here...",
+        "keywordsLabel": "Main Keywords",
+        "keywordsPlaceholder": "e.g., 'lawyers for startups, tech legal advice'",
+        "submitButton": "Analyze SEO",
+        "submittingButton": "Analyzing..."
+      },
+      "results": {
+        "title": "SEO Analysis",
+        "titleTag": "Title Tag",
+        "metaDescription": "Meta Description",
+        "headingStructure": "Heading Structure (H1-H6)",
+        "keywordOptimization": "Keyword Optimization",
+        "schemaMarkup": "Schema Markup Example (JSON-LD for FAQ)",
+        "longTailKeywords": "Long-Tail Keywords",
+        "speedImprovements": "Speed Improvements"
+      }
+    }
+  }
+}
