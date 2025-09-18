@@ -22,12 +22,12 @@ export function Hero({ dictionary }: { dictionary: Dictionary['hero'] }) {
             <ContactModal
               dictionary={dictionary}
               trigger={
-                <Button size="lg" className="bg-tech-teal-500 hover:bg-tech-teal-600 text-slate-900 font-bold">
+                <Button size="lg" className="bg-gradient-primary font-bold text-white transition-all hover:brightness-110">
                   <span>{dictionary.cta1}</span>
                 </Button>
               }
             />
-            <Button asChild variant="outline" size="lg" className="border-tech-teal-500 text-tech-teal-500 hover:bg-tech-teal-500/10 hover:text-tech-teal-400">
+            <Button asChild variant="outline" size="lg" className="border-brand-navy-500 bg-transparent text-brand-navy-300 hover:border-tech-teal-500 hover:bg-brand-navy-700/50 hover:text-white">
               <Link href="/#pricing">{dictionary.cta2}</Link>
             </Button>
           </div>

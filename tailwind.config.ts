@@ -16,6 +16,10 @@ export default {
       },
     },
     extend: {
+      backgroundImage: {
+        'gradient-primary': 'linear-gradient(135deg, #06203D 0%, #134F75 100%)',
+        'gradient-callout': 'linear-gradient(135deg, #134F75 0%, #19B7C6 100%)',
+      },
       fontFamily: {
         headline: ['"Belleza"', 'sans-serif'],
         body: ['"Alegreya"', 'serif'],
@@ -54,6 +58,37 @@ export default {
           DEFAULT: 'hsl(var(--card))',
           foreground: 'hsl(var(--card-foreground))',
         },
+        'brand-navy': {
+          900: '#06203D',
+          700: '#134F75',
+          500: '#1F6A94',
+          300: '#3C84A8',
+        },
+        'brand-mist': {
+          100: '#C6D3DB',
+        },
+        'tech-teal': {
+          600: '#128A9D',
+          500: '#19B7C6',
+          300: '#7DD9E1',
+          100: '#E2F6F8',
+        },
+        indigo: {
+          600: '#2F3D6B',
+        },
+        steel: {
+          500: '#62849C',
+        },
+        slate: {
+          900: '#0F172A',
+          700: '#334155',
+          500: '#64748B',
+          200: '#E2E8F0',
+          50: '#F8FAFC',
+        },
+        success: '#059669',
+        warning: '#C9A227',
+        error: '#E11D48',
       },
       borderRadius: {
         lg: 'var(--radius)',
