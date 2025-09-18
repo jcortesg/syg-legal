@@ -42,44 +42,44 @@ export const PROBLEM_SOLUTION_DATA = {
 };
 
 export type Service = {
-  icon: LucideIcon;
+  icon: string;
   title: string;
   description: string;
 };
 
 export const SERVICES_DATA: Service[] = [
   {
-    icon: Briefcase,
+    icon: 'Briefcase',
     title: 'Constitución y Gobierno Corporativo',
     description:
       'Estructuramos tu empresa correctamente desde el día uno, preparando el camino para futuras inversiones y una gestión corporativa sólida y escalable.',
   },
   {
-    icon: FileText,
+    icon: 'FileText',
     title: 'Contratos Tecnológicos',
     description:
       'Redactamos y negociamos tus contratos clave (SaaS, SLA, DPA, Términos y Privacidad) para proteger tu negocio y habilitar tus ventas sin fricción.',
   },
   {
-    icon: Scale,
+    icon: 'Scale',
     title: 'Inversión y Due Diligence',
     description:
       'Te acompañamos en rondas de inversión (SAFE, notas, term sheets) y organizamos tu data room para un proceso de due diligence ágil y exitoso.',
   },
   {
-    icon: Lightbulb,
+    icon: 'Lightbulb',
     title: 'Propiedad Intelectual',
     description:
       'Protegemos tus activos más valiosos: registro de marca, protección de software y gestión de cesiones de derechos para asegurar tu innovación.',
   },
   {
-    icon: ShieldCheck,
+    icon: 'ShieldCheck',
     title: 'Compliance Regulatorio',
     description:
       'Navegamos la complejidad regulatoria en datos personales, fintech y salud digital para que operes con confianza y cumpliendo la normativa vigente.',
   },
   {
-    icon: Globe,
+    icon: 'Globe',
     title: 'Expansión Internacional',
     description:
       'Facilitamos tu crecimiento global, asesorándote en la estructura legal, fiscal y operativa para abrir nuevos mercados de forma segura y eficiente.',
@@ -152,7 +152,7 @@ export const TESTIMONIALS_DATA: Testimonial[] = [
     author: 'Ana Pérez',
     role: 'CEO',
     company: 'FintechCo',
-    avatar: PlaceHolderImages.find((img) => img.id === 'avatar-1')?.imageUrl!,
+    avatar: 'avatar-1',
   },
   {
     quote:
@@ -160,7 +160,7 @@ export const TESTIMONIALS_DATA: Testimonial[] = [
     author: 'Carlos Rodríguez',
     role: 'CTO',
     company: 'SaaSy',
-    avatar: PlaceHolderImages.find((img) => img.id === 'avatar-2')?.imageUrl!,
+    avatar: 'avatar-2',
   },
   {
     quote:
@@ -168,7 +168,7 @@ export const TESTIMONIALS_DATA: Testimonial[] = [
     author: 'Laura Gómez',
     role: 'Head of Product',
     company: 'HealthTech Solutions',
-    avatar: PlaceHolderImages.find((img) => img.id === 'avatar-3')?.imageUrl!,
+    avatar: 'avatar-3',
   },
 ];
 

@@ -3,7 +3,7 @@ import '../globals.css';
 import { Toaster } from '@/components/ui/toaster';
 import { AppHeader } from '@/components/layout/header';
 import { AppFooter } from '@/components/layout/footer';
-import { getDictionary } from '@/lib/dictionaries';
+import { getDictionary } from '@/dictionaries';
 import type { Locale } from '@/i18n-config';
 
 export const metadata: Metadata = {
@@ -20,7 +20,7 @@ export default async function RootLayout({
 }>) {
   const dictionary = await getDictionary(lang);
   return (
-    <html lang={lang}>
+    <html lang={lang} className="dark">
       <head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link
@@ -29,7 +29,7 @@ export default async function RootLayout({
           crossOrigin="anonymous"
         />
         <link
-          href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400;0,500;0,700;1,400&family=Belleza&display=swap"
+          href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap"
           rel="stylesheet"
         />
       </head>
@@ -37,7 +37,7 @@ export default async function RootLayout({
         <div className="flex min-h-screen flex-col">
           <AppHeader lang={lang} dictionary={dictionary.navigation} />
           <main className="flex-1">{children}</main>
-          <AppFooter />
+          <AppFooter lang={lang} />
         </div>
         <Toaster />
       </body>

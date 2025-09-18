@@ -1,19 +1,22 @@
 import Image from 'next/image';
-import { TRUSTED_BY_LOGOS } from '@/lib/data';
+import { PlaceHolderImages } from '@/lib/placeholder-images';
+import type { Dictionary } from '@/dictionaries';
 
-export function TrustedBy() {
+export function TrustedBy({
+  dictionary,
+}: {
+  dictionary: Dictionary['trustedBy'];
+}) {
+  const logos = PlaceHolderImages.filter((img) => img.id.startsWith('logo-'));
   return (
     <section className="bg-background py-12 sm:py-16">
       <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <h2 className="text-center font-headline text-sm font-semibold uppercase tracking-wider text-muted-foreground">
-          Con la confianza de startups líderes
+          {dictionary.headline}
         </h2>
         <div className="mt-6 grid grid-cols-2 gap-x-6 gap-y-8 sm:grid-cols-3 md:grid-cols-5">
-          {TRUSTED_BY_LOGOS.map((logo) => (
-            <div
-              key={logo.id}
-              className="relative flex justify-center"
-            >
+          {logos.map((logo) => (
+            <div key={logo.id} className="relative flex justify-center">
               <Image
                 src={logo.imageUrl}
                 alt={logo.description}

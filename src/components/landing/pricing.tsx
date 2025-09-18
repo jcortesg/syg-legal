@@ -1,29 +1,29 @@
 import Link from 'next/link';
-import { PRICING_DATA, type Plan } from '@/lib/data';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import { Check } from 'lucide-react';
 import { cn } from '@/lib/utils';
+import type { Dictionary } from '@/dictionaries';
+import type { Plan } from '@/lib/data';
 
-export function Pricing() {
+export function Pricing({ dictionary }: { dictionary: Dictionary['pricing'] }) {
   return (
     <section id="pricing" className="bg-secondary/50 py-20 sm:py-28">
       <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="text-center">
           <p className="font-headline text-base font-semibold uppercase tracking-wider text-primary">
-            Planes Flexibles
+            {dictionary.title}
           </p>
           <h2 className="mt-2 font-headline text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
-            Precios transparentes para cada etapa
+            {dictionary.headline}
           </h2>
           <p className="mx-auto mt-4 max-w-2xl text-lg text-muted-foreground">
-            Elige el plan que se ajusta a tus necesidades actuales y escala a
-            medida que tu startup crece. Sin sorpresas, sin costos ocultos.
+            {dictionary.subheadline}
           </p>
         </div>
         <div className="mt-12 grid grid-cols-1 gap-8 lg:grid-cols-3">
-          {PRICING_DATA.map((plan) => (
-            <PlanCard key={plan.name} plan={plan} />
+          {dictionary.plans.map((plan) => (
+            <PlanCard key={plan.name} plan={plan} popularText={dictionary.popular} />
           ))}
         </div>
       </div>
@@ -31,7 +31,7 @@ export function Pricing() {
   );
 }
 
-function PlanCard({ plan }: { plan: Plan }) {
+function PlanCard({ plan, popularText }: { plan: Plan; popularText: string }) {
   return (
     <div
       className={cn(
@@ -42,7 +42,7 @@ function PlanCard({ plan }: { plan: Plan }) {
       <div className="relative">
         <h3 className="font-headline text-2xl font-semibold">{plan.name}</h3>
         {plan.isPopular && (
-          <Badge className="absolute -top-1 right-0">Más Popular</Badge>
+          <Badge className="absolute -top-1 right-0">{popularText}</Badge>
         )}
       </div>
       <p className="mt-4 text-muted-foreground">

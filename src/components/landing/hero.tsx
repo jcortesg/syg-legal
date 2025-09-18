@@ -1,14 +1,14 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import { Button } from '@/components/ui/button';
-import { HERO_DATA } from '@/lib/data';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
+import type { Dictionary } from '@/dictionaries';
 
-export function Hero() {
+export function Hero({ dictionary }: { dictionary: Dictionary['hero'] }) {
   const heroImage = PlaceHolderImages.find((img) => img.id === 'hero-image');
 
   return (
-    <section className="relative h-[80vh] min-h-[500px] w-full">
+    <section className="relative h-[80vh] min-h-[600px] w-full">
       {heroImage && (
         <Image
           src={heroImage.imageUrl}
@@ -19,21 +19,21 @@ export function Hero() {
           priority
         />
       )}
-      <div className="absolute inset-0 bg-gradient-to-t from-background/80 via-background/20 to-transparent" />
+      <div className="absolute inset-0 bg-background/80" />
       <div className="relative z-10 flex h-full items-center justify-center text-center">
         <div className="container max-w-4xl">
           <h1 className="font-headline text-4xl font-bold text-foreground sm:text-5xl md:text-6xl">
-            {HERO_DATA.headline}
+            {dictionary.headline}
           </h1>
-          <p className="mx-auto mt-6 max-w-2xl text-lg text-foreground/80 md:text-xl">
-            {HERO_DATA.subheadline}
+          <p className="mx-auto mt-6 max-w-3xl text-lg text-foreground/80 md:text-xl">
+            {dictionary.subheadline}
           </p>
           <div className="mt-8 flex justify-center gap-4">
             <Button asChild size="lg">
-              <Link href="/#contact">{HERO_DATA.cta1}</Link>
+              <Link href="/#contact">{dictionary.cta1}</Link>
             </Button>
             <Button asChild variant="secondary" size="lg">
-              <Link href="/#pricing">{HERO_DATA.cta2}</Link>
+              <Link href="/#pricing">{dictionary.cta2}</Link>
             </Button>
           </div>
         </div>

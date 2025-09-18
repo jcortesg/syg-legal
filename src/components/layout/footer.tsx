@@ -1,12 +1,15 @@
 import Link from 'next/link';
 import { Logo } from '@/components/logo';
-import { FOOTER_DATA } from '@/lib/data';
+import { getDictionary } from '@/dictionaries';
+import { Locale } from '@/i18n-config';
 
-export function AppFooter() {
+export async function AppFooter({ lang }: { lang: Locale }) {
+  const dictionary = await getDictionary(lang);
+  const footerData = dictionary.footer;
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="border-t bg-card">
+    <footer className="border-t bg-secondary/20">
       <div className="container mx-auto max-w-7xl px-4 py-8 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 gap-8 md:grid-cols-4">
           <div className="md:col-span-2">
@@ -17,19 +20,19 @@ export function AppFooter() {
               </span>
             </div>
             <p className="mt-4 max-w-xs text-muted-foreground">
-              {FOOTER_DATA.description}
+              {footerData.description}
             </p>
           </div>
 
           <div>
             <p className="font-headline font-medium text-foreground">
-              Navegación
+              {dictionary.navigation.title}
             </p>
             <nav className="mt-4 flex flex-col space-y-2">
-              {FOOTER_DATA.links.map((link) => (
+              {footerData.links.map((link) => (
                 <Link
                   key={link.text}
-                  href={link.href}
+                  href={`/${lang}${link.href}`}
                   className="text-muted-foreground hover:text-foreground"
                 >
                   {link.text}
@@ -41,7 +44,7 @@ export function AppFooter() {
           <div>
             <p className="font-headline font-medium text-foreground">Social</p>
             <nav className="mt-4 flex flex-col space-y-2">
-              {FOOTER_DATA.social.map((link) => (
+              {footerData.social.map((link) => (
                 <a
                   key={link.text}
                   href={link.href}
@@ -58,7 +61,7 @@ export function AppFooter() {
 
         <div className="mt-8 border-t pt-8 sm:flex sm:items-center sm:justify-between">
           <nav className="flex space-x-4">
-            {FOOTER_DATA.policies.map((link) => (
+            {footerData.policies.map((link) => (
               <Link
                 key={link.text}
                 href={link.href}
@@ -69,7 +72,7 @@ export function AppFooter() {
             ))}
           </nav>
           <p className="mt-4 text-sm text-muted-foreground sm:mt-0">
-            {FOOTER_DATA.legal.replace('{YEAR}', currentYear.toString())}
+            {footerData.legal.replace('{YEAR}', currentYear.toString())}
           </p>
         </div>
       </div>

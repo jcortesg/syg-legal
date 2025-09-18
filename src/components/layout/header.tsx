@@ -18,29 +18,14 @@ import {
 import React from 'react';
 import { usePathname } from 'next/navigation';
 import { i18n, type Locale } from '@/i18n-config';
-
-type Dictionary = {
-  services: string;
-  pricing: string;
-  about: string;
-  faq: string;
-  tools: string;
-  abTest: string;
-  adCopy: string;
-  seoAnalyzer: string;
-  contact: string;
-  openMenu: string;
-  legalClauseGenerator: string;
-  contractAnalyzer: string;
-  jurisprudenceFinder: string;
-};
+import type { Dictionary } from '@/dictionaries';
 
 export function AppHeader({
   lang,
   dictionary,
 }: {
   lang: Locale;
-  dictionary: Dictionary;
+  dictionary: Dictionary['navigation'];
 }) {
   const [isSheetOpen, setSheetOpen] = React.useState(false);
 
@@ -157,7 +142,7 @@ function ToolsDropdown({
   dictionary,
   toolLinks,
 }: {
-  dictionary: Dictionary;
+  dictionary: Dictionary['navigation'];
   toolLinks: { text: string; href: string }[];
 }) {
   return (
