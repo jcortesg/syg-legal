@@ -2,56 +2,56 @@
   "placeholderImages": [
     {
       "id": "hero-image",
-      "description": "Professional law office setting.",
-      "imageUrl": "https://picsum.photos/seed/law-hero/1200/800",
+      "description": "Modern and professional law office setting with city view.",
+      "imageUrl": "https://picsum.photos/seed/corp-law-hero/1200/800",
       "imageHint": "law office"
     },
     {
       "id": "avatar-1",
-      "description": "Professional headshot of a person.",
-      "imageUrl": "https://picsum.photos/seed/syg-avatar1/100/100",
+      "description": "Professional corporate headshot of a person.",
+      "imageUrl": "https://picsum.photos/seed/corp-avatar1/100/100",
       "imageHint": "corporate headshot"
     },
     {
       "id": "avatar-2",
-      "description": "Professional headshot of a person.",
-      "imageUrl": "https://picsum.photos/seed/syg-avatar2/100/100",
+      "description": "Professional corporate headshot of a person.",
+      "imageUrl": "https://picsum.photos/seed/corp-avatar2/100/100",
       "imageHint": "corporate headshot"
     },
     {
       "id": "avatar-3",
-      "description": "Professional headshot of a person.",
-      "imageUrl": "https://picsum.photos/seed/syg-avatar3/100/100",
+      "description": "Professional corporate headshot of a person.",
+      "imageUrl": "https://picsum.photos/seed/corp-avatar3/100/100",
       "imageHint": "corporate headshot"
     },
     {
       "id": "logo-1",
-      "description": "Placeholder logo for a modern company.",
-      "imageUrl": "https://picsum.photos/seed/syg-logo1/150/50",
+      "description": "Placeholder logo for a modern tech company.",
+      "imageUrl": "https://picsum.photos/seed/corp-logo1/150/50",
       "imageHint": "minimalist logo"
     },
     {
       "id": "logo-2",
-      "description": "Placeholder logo for a modern company.",
-      "imageUrl": "https://picsum.photos/seed/syg-logo2/150/50",
+      "description": "Placeholder logo for a modern tech company.",
+      "imageUrl": "https://picsum.photos/seed/corp-logo2/150/50",
       "imageHint": "minimalist logo"
     },
     {
       "id": "logo-3",
-      "description": "Placeholder logo for a modern company.",
-      "imageUrl": "https://picsum.photos/seed/syg-logo3/150/50",
+      "description": "Placeholder logo for a modern tech company.",
+      "imageUrl": "https://picsum.photos/seed/corp-logo3/150/50",
       "imageHint": "minimalist logo"
     },
     {
       "id": "logo-4",
-      "description": "Placeholder logo for a modern company.",
-      "imageUrl": "https://picsum.photos/seed/syg-logo4/150/50",
+      "description": "Placeholder logo for a modern tech company.",
+      "imageUrl": "https://picsum.photos/seed/corp-logo4/150/50",
       "imageHint": "minimalist logo"
     },
     {
       "id": "logo-5",
-      "description": "Placeholder logo for a modern company.",
-      "imageUrl": "https://picsum.photos/seed/syg-logo5/150/50",
+      "description": "Placeholder logo for a modern tech company.",
+      "imageUrl": "https://picsum.photos/seed/corp-logo5/150/50",
       "imageHint": "minimalist logo"
     }
   ]
