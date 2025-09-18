@@ -201,6 +201,10 @@
       { "text": "Terms of Service", "href": "#" }
     ]
   },
+  "contact": {
+    "title": "Book a Consultation",
+    "description": "Fill out the form below and we'll get back to you as soon as possible."
+  },
   "tools": {
     "abTest": {
       "title": "Headline A/B Test Variant Generator",

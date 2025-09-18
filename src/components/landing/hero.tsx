@@ -3,6 +3,7 @@ import Image from 'next/image';
 import { Button } from '@/components/ui/button';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import type { Dictionary } from '@/dictionaries';
+import { ContactModal } from '../contact-modal';
 
 export function Hero({ dictionary }: { dictionary: Dictionary['hero'] }) {
   const heroImage = PlaceHolderImages.find((img) => img.id === 'hero-image');
@@ -29,9 +30,14 @@ export function Hero({ dictionary }: { dictionary: Dictionary['hero'] }) {
             {dictionary.subheadline}
           </p>
           <div className="mt-8 flex justify-center gap-4">
-            <Button asChild size="lg">
-              <Link href="/#contact">{dictionary.cta1}</Link>
-            </Button>
+            <ContactModal
+              dictionary={dictionary}
+              trigger={
+                <Button size="lg">
+                  <span>{dictionary.cta1}</span>
+                </Button>
+              }
+            />
             <Button asChild variant="outline" size="lg">
               <Link href="/#pricing">{dictionary.cta2}</Link>
             </Button>

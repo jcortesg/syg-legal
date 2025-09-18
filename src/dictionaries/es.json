@@ -201,6 +201,10 @@
       { "text": "Términos de Servicio", "href": "#" }
     ]
   },
+  "contact": {
+    "title": "Agendar una Asesoría",
+    "description": "Completa el formulario y nos pondremos en contacto contigo lo antes posible."
+  },
   "tools": {
     "abTest": {
       "title": "Generador de Variantes de Encabezados (A/B Testing)",

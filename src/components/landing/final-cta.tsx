@@ -1,6 +1,6 @@
-import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import type { Dictionary } from '@/dictionaries';
+import { ContactModal } from '../contact-modal';
 
 export function FinalCta({
   dictionary,
@@ -17,9 +17,14 @@ export function FinalCta({
           {dictionary.subheadline}
         </p>
         <div className="mt-8">
-          <Button asChild size="lg">
-            <Link href="#">{dictionary.cta}</Link>
-          </Button>
+          <ContactModal
+            dictionary={dictionary}
+            trigger={
+              <Button size="lg">
+                <span>{dictionary.cta}</span>
+              </Button>
+            }
+          />
         </div>
       </div>
     </section>

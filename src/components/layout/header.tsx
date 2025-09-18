@@ -19,6 +19,7 @@ import React from 'react';
 import { usePathname } from 'next/navigation';
 import { i18n, type Locale } from '@/i18n-config';
 import type { Dictionary } from '@/dictionaries';
+import { ContactModal } from '../contact-modal';
 
 function ColombianFlag() {
   return (
@@ -129,9 +130,14 @@ export function AppHeader({
 
         <div className="ml-auto flex items-center justify-end gap-2">
           <LanguageSwitcher lang={lang} />
-          <Button asChild>
-            <Link href={`/${lang}/#contact`}>{dictionary.contact}</Link>
-          </Button>
+          <ContactModal
+            dictionary={dictionary}
+            trigger={
+              <Button>
+                <span>{dictionary.contact}</span>
+              </Button>
+            }
+          />
           <div className="md:hidden">
             <Sheet open={isSheetOpen} onOpenChange={setSheetOpen}>
               <SheetTrigger asChild>
