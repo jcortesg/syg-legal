@@ -6,7 +6,7 @@ import { HeroBackground } from './hero-background';
 
 export function Hero({ dictionary }: { dictionary: Dictionary['hero'] }) {
   return (
-    <section className="relative overflow-hidden bg-background text-foreground">
+    <section className="relative overflow-hidden bg-primary text-foreground">
       <div className="absolute inset-0">
         <HeroBackground className="h-full w-full object-cover" />
       </div>
