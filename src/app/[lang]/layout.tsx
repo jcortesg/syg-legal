@@ -7,7 +7,7 @@ import { getDictionary } from '@/dictionaries';
 import type { Locale } from '@/i18n-config';
 
 export const metadata: Metadata = {
-  title: 'SYG Legal Landing Optimizer',
+  title: 'SygLegal',
   description: 'Your legal partner to grow without fear.',
 };
 
