@@ -19,13 +19,13 @@ export function Hero({ dictionary }: { dictionary: Dictionary['hero'] }) {
           priority
         />
       )}
-      <div className="absolute inset-0 bg-background/80" />
+      <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/50 to-transparent" />
       <div className="relative z-10 flex h-full items-center justify-center text-center">
         <div className="container max-w-4xl">
-          <h1 className="font-headline text-4xl font-bold text-foreground sm:text-5xl md:text-6xl">
+          <h1 className="font-headline text-4xl font-bold text-white sm:text-5xl md:text-6xl">
             {dictionary.headline}
           </h1>
-          <p className="mx-auto mt-6 max-w-3xl text-lg text-foreground/80 md:text-xl">
+          <p className="mx-auto mt-6 max-w-3xl text-lg text-white/80 md:text-xl">
             {dictionary.subheadline}
           </p>
           <div className="mt-8 flex justify-center gap-4">

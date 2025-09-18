@@ -2,9 +2,9 @@
   "placeholderImages": [
     {
       "id": "hero-image",
-      "description": "Modern office building with a team of lawyers discussing.",
-      "imageUrl": "https://picsum.photos/seed/corporate-law/1200/800",
-      "imageHint": "corporate lawyers meeting"
+      "description": "Digital lawyer working with technology.",
+      "imageUrl": "https://universidadeuropea.com/resources/media/images/abogado-digital-800x450.width-640.jpg",
+      "imageHint": "digital lawyer"
     },
     {
       "id": "avatar-1",
