@@ -119,7 +119,7 @@ export function AppHeader({
             <Link
               key={link.text}
               href={link.href}
-              className="font-medium text-foreground/60 transition-colors hover:text-foreground/80"
+              className="font-medium text-accent transition-colors hover:text-accent/80"
             >
               {link.text}
             </Link>
@@ -198,7 +198,7 @@ function ToolsDropdown({
       <DropdownMenuTrigger asChild>
         <Button
           variant="ghost"
-          className="gap-1 px-2 font-medium text-foreground/60 transition-colors hover:text-foreground/80"
+          className="gap-1 px-2 font-medium text-accent transition-colors hover:text-accent/80"
         >
           {dictionary.tools} <ChevronDown className="h-4 w-4" />
         </Button>
