@@ -19,7 +19,7 @@ export function Hero({ dictionary }: { dictionary: Dictionary['hero'] }) {
           priority
         />
       )}
-      <div className="absolute inset-0 bg-black/60" />
+      <div className="absolute inset-0 bg-black/40" />
       <div className="relative z-10 flex h-full items-center justify-center text-center">
         <div className="container max-w-4xl">
           <h1 className="font-headline text-4xl font-bold text-white sm:text-5xl md:text-6xl">
