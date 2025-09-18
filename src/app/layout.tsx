@@ -6,16 +6,18 @@ import { AppFooter } from '@/components/layout/footer';
 
 export const metadata: Metadata = {
   title: 'SygLegal Landing Optimizer',
-  description: 'Tu socio legal para crecer sin miedo.',
+  description: 'Your legal partner to grow without fear.',
 };
 
 export default function RootLayout({
   children,
+  params: { locale },
 }: Readonly<{
   children: React.ReactNode;
+  params: { locale: string };
 }>) {
   return (
-    <html lang="es">
+    <html lang={locale}>
       <head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link
