@@ -25,16 +25,16 @@
       "imageHint": "professional headshot"
     },
     {
-      "id": "logo-y-combinator",
-      "description": "Logo for Y Combinator.",
-      "imageUrl": "https://picsum.photos/seed/yc-logo/158/48",
-      "imageHint": "Y Combinator logo"
+      "id": "logo-homesquad",
+      "description": "Logo for HomeSquad.",
+      "imageUrl": "https://www.homesquad.co/assets/logo_homesquad-c2d02787d7a2314e534a2838204dd732f7f8d9c595bb323cf4f58785d7615d0e.png",
+      "imageHint": "HomeSquad logo"
     },
     {
-      "id": "logo-sequoia",
-      "description": "Logo for Sequoia Capital.",
-      "imageUrl": "https://picsum.photos/seed/sequoia-logo/158/48",
-      "imageHint": "Sequoia logo"
+      "id": "logo-fedesoft",
+      "description": "Logo for Fedesoft.",
+      "imageUrl": "https://fedesoft.org/wp-content/uploads/2023/10/Logo-Fedesoft_Fondo-Claro-Principal.png",
+      "imageHint": "Fedesoft logo"
     },
     {
       "id": "logo-stripe",
