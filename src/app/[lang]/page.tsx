@@ -1,5 +1,4 @@
 import { Hero } from '@/components/landing/hero';
-import { TrustedBy } from '@/components/landing/trusted-by';
 import { ProblemSolution } from '@/components/landing/problem-solution';
 import { Services } from '@/components/landing/services';
 import { Testimonials } from '@/components/landing/testimonials';
@@ -14,7 +13,6 @@ export default async function Home({ params: { lang } }: { params: { lang: Local
   return (
     <>
       <Hero dictionary={dictionary.hero} />
-      <TrustedBy dictionary={dictionary.trustedBy} />
       <ProblemSolution dictionary={dictionary.problemSolution} />
       <Services dictionary={dictionary.services} />
       <Testimonials dictionary={dictionary.testimonials} />
