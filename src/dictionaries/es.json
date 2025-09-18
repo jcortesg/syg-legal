@@ -7,9 +7,9 @@
     "about": "Nosotros",
     "faq": "FAQ",
     "tools": "Herramientas AI",
-    "legalClauseGenerator": "Generador de Cláusulas",
-    "contractAnalyzer": "Analizador de Contratos",
-    "jurisprudenceFinder": "Buscador de Jurisprudencia",
+    "abTest": "Generador de Pruebas A/B",
+    "adCopy": "Generador de Copys para Anuncios",
+    "seo": "Analizador SEO",
     "contact": "Agendar Asesoría",
     "openMenu": "Abrir menú"
   },
@@ -190,7 +190,7 @@
       { "text": "Servicios", "href": "#services" },
       { "text": "Planes", "href": "#pricing" },
       { "text": "FAQ", "href": "#faq" },
-      { "text": "Herramientas AI", "href": "/tools/clause-generator" }
+      { "text": "Herramientas AI", "href": "/tools/ab-test-generator" }
     ],
     "social": [
       { "text": "LinkedIn", "href": "#" },

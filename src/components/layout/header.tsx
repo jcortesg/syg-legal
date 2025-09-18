@@ -92,16 +92,16 @@ export function AppHeader({
 
   const toolLinks = [
     {
-      text: dictionary.legalClauseGenerator,
-      href: `/${lang}/tools/clause-generator`,
+      text: dictionary.abTest,
+      href: `/${lang}/tools/ab-test-generator`,
     },
     {
-      text: dictionary.contractAnalyzer,
-      href: `/${lang}/tools/contract-analyzer`,
+      text: dictionary.adCopy,
+      href: `/${lang}/tools/ad-copy-generator`,
     },
     {
-      text: dictionary.jurisprudenceFinder,
-      href: `/${lang}/tools/jurisprudence-finder`,
+      text: dictionary.seo,
+      href: `/${lang}/tools/seo-analyzer`,
     },
   ];
 
@@ -190,7 +190,7 @@ function ToolsDropdown({
   dictionary,
   toolLinks,
 }: {
-  dictionary: Dictionary['navigation'];
+  dictionary: Pick<Dictionary['navigation'], 'tools'>;
   toolLinks: { text: string; href: string }[];
 }) {
   return (

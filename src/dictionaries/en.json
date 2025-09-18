@@ -7,9 +7,9 @@
     "about": "About Us",
     "faq": "FAQ",
     "tools": "AI Tools",
-    "legalClauseGenerator": "Clause Generator",
-    "contractAnalyzer": "Contract Analyzer",
-    "jurisprudenceFinder": "Jurisprudence Finder",
+    "abTest": "A/B Test Generator",
+    "adCopy": "Ad Copy Generator",
+    "seo": "SEO Analyzer",
     "contact": "Book a Consultation",
     "openMenu": "Open menu"
   },
@@ -166,7 +166,7 @@
       },
       {
         "question": "My startup is in a regulated sector (fintech/healthtech), do you have experience?",
-        "answer": "Yes, it's one of our specialties. We help startups in regulated sectors navigate compliance with personal data, licensing, and specific regulations, ensuring your product or service meets all legal requirements from the start."
+        "answer": "Yes, it's one of our specialties. We help startups in regulated sectors to navigate compliance with personal data, licensing, and specific regulations, ensuring your product or service meets all legal requirements from the start."
       },
       {
         "question": "Do you help me prepare for an investment round with international VCs?",
@@ -190,7 +190,7 @@
       { "text": "Services", "href": "#services" },
       { "text": "Pricing", "href": "#pricing" },
       { "text": "FAQ", "href": "#faq" },
-      { "text": "AI Tools", "href": "/tools/clause-generator" }
+      { "text": "AI Tools", "href": "/tools/ab-test-generator" }
     ],
     "social": [
       { "text": "LinkedIn", "href": "#" },
